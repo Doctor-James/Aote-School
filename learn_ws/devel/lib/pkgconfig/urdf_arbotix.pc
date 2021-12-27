@@ -1,0 +1,8 @@
+prefix=/home/zjl/code/ros/aote-school/learn_ws/devel
+
+Name: urdf_arbotix
+Description: Description of urdf_arbotix
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

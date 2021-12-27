@@ -1,0 +1,8 @@
+prefix=/home/zjl/code/ros/aote-school/learn_ws/install
+
+Name: urdf_rviz1
+Description: Description of urdf_rviz1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

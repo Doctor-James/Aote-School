@@ -1,0 +1,2 @@
+urdf_arbotix:urdf_rviz1
+-DCATKIN_DEVEL_PREFIX=/home/zjl/code/ros/aote-school/learn_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zjl/code/ros/aote-school/learn_ws/install -G Unix Makefiles

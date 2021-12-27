@@ -1,0 +1,8 @@
+prefix=/home/zjl/code/ros/aote-school/gmapping_ws/devel
+
+Name: gmapping_aero
+Description: Description of gmapping_aero
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

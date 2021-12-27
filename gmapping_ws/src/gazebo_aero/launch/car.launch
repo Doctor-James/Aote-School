@@ -1,0 +1,28 @@
+<launch>
+    <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find gazebo_aero)/urdf/xacro/car.urdf.xacro" />
+
+  	<arg name="world_name" value="$(find gazebo_aero)/worlds/room.world"/>
+  	<arg name="paused" default="false"/>
+ 	<arg name="use_sim_time" default="true"/>
+  	<arg name="gui" default="true"/>
+  	<arg name="headless" default="false"/>
+  	<arg name="debug" default="false"/>
+
+
+  <!-- 运行gazebo仿真环境 -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_name)" />
+        <arg name="debug" value="$(arg debug)" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+        <arg name="headless" value="$(arg headless)"/>
+    </include>
+    <!-- 启动 gazebo -->
+    <!--<include file="$(find gazebo_ros)/launch/empty_world.launch" />
+		<arg name="world_name" value="$(find urdf_gazebo1)/worlds/room.world" />-->
+
+    <!-- 在 gazebo 中显示机器人模型 -->
+    <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  />
+</launch>

@@ -1,0 +1,2 @@
+gazebo_aero:gmapping_aero
+-DCATKIN_DEVEL_PREFIX=/home/zjl/code/ros/aote-school/gmapping_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zjl/code/ros/aote-school/gmapping_ws/install -G Unix Makefiles
